@@ -21,10 +21,10 @@ const ProductPage = () => {
 getProduct()
     },[])
 
-// if(!product?.title)
-// {
-//     return <h1>Loading Product ....</h1>
-// }
+if(!product?.title)
+{
+    return <h1>Loading Product ....</h1>
+}
     return (
         product &&
         <div className='h-screen bg-amazonclone-background'>
